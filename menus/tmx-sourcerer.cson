@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'TMX Fetch'
+      'command': 'tmx-sourcerer:fetch'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'tmx-sourcerer'
+      'submenu': [
+        {
+          'label': 'Fetch'
+          'command': 'tmx-sourcerer:fetch'
+        }
+      ]
+    ]
+  }
+]
